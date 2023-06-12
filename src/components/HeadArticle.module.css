@@ -1,0 +1,72 @@
+.article {
+  grid-area: article1;
+  
+}
+
+.containter{
+  display: grid;
+  padding: 1rem;
+  
+}
+
+.containter h1{
+  font-weight: 800;
+  font-size: 1.5rem;
+  display: block;
+  text-align: left;
+}
+.btn{
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  border: none;
+  padding: 1rem 2rem;
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: 3px;
+  align-self: flex-start;
+  transition: background-color 0.5s;
+}
+
+.btn:active, .btn:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+.articleDescription{
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.articleDescription p{
+  color: var(--Dark-grayish-blue);
+  font-size: clamp(1rem, 20vw, 1.2rem);
+  word-spacing: 0.3rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.articleImage img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  
+}
+
+@media only screen and (max-width: 375px) {
+  .containter{
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+
+@media only screen and (min-width: 40em) {
+    .containter{
+    grid-template-columns: 1fr 1fr;
+    }
+    
+  }

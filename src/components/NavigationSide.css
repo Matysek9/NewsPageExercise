@@ -1,0 +1,33 @@
+.sideMenu{
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    right: -15rem;
+    top: -1rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .sideMenu ul{
+    list-style: none;
+  }
+  .sideMenu li{
+    padding: 1rem 0; 
+  }
+
+  .sideMenu li:hover{
+    color: var(--Soft-red);
+  }
+
+  .sideMenu.active{
+    right: -1rem;
+  }
+
+  .closeBtn{
+    align-self: flex-end;
+    width: 1rem;
+
+  }

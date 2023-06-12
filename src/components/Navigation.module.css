@@ -1,0 +1,51 @@
+@import url(../colors.css);
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+
+    grid-area: nav;
+    
+}
+
+.smallerIcon{
+    width: auto;
+    height: 1.5rem;
+}
+
+.menuFullList{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  margin-right: 2rem;
+  
+}
+.menuFullList li{
+  font-size: 0.8rem
+}
+
+.menuFullList li:hover{
+  color: var(--Soft-red);
+  cursor: pointer;
+  
+}
+
+
+@media only screen and (max-width: 41em) {
+    .menuFullList{
+      display: none;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 40em) {
+    .navBar .menu{
+      display: none;
+    }
+   
+    }
+
